@@ -1,0 +1,427 @@
+html  {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-235deg, #dd666c, #ab303e, #7e2631);
+}
+
+
+.coversize  {
+  height: 600px;
+  width: 384px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-image: url("../images/noeyes.jpg");
+  box-shadow: 1px 7px 15px black;
+  transition: 3s;
+  animation: goin 3s forwards;
+}
+
+@keyframes goin {
+  0%  {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+.L1 {
+  border: 2px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 350px;
+  right: 130px;
+  animation: l1 3s linear;
+}
+
+@keyframes l1 {
+  0%  {top: 650px; right: 230px; opacity: 0;}
+  100%  {top: 350px; right: 130px; opacity: 1;}
+}
+
+.L2 {
+  border: 4px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 380px;
+  right: 135px;
+  animation: l2 2.5s linear;
+}
+
+@keyframes l2 {
+  0%  {top: 650px; right: 230px; opacity: 0;}
+  100%  {top: 380px; right: 145px; opacity: 1;}
+}
+
+.L3 {
+  border: 6px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 415px;
+  right: 135px;
+  animation: l3 2s linear;
+}
+
+@keyframes l3 {
+  0%  {top: 650px; right: 230px; opacity: 0;}
+  100%  {top: 415px; right: 140px; opacity: 1;}
+}
+
+.L4 {
+  border: 10px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 450px;
+  right: 135px;
+  animation: l4 1.5s linear;
+}
+
+@keyframes l4 {
+  0%  {top: 650px; right: 230px; opacity: 0;}
+  100%  {top: 450px; right: 140px; opacity: 1;}
+}
+
+.L5 {
+  border: 10px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 510px;
+  right: 130px;
+  animation: l5 1s linear;
+}
+
+@keyframes l5 {
+  0%  {top: 650px; right: 230px; opacity: 0;}
+  100%  {top: 510px; right: 250px; opacity: 1;}
+}
+
+.L6 {
+  border: 13px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 540px;
+  right: 130px;
+  animation: l6 .5s linear;
+}
+
+@keyframes l6 {
+  0%  {top: 650px; right: 230px; opacity: 0;}
+  100%  {top: 540px; right: 135px; opacity: 1;}
+}
+
+.L7 {
+  border: 15px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 572px;
+  right: 129px;
+  animation: l7 .2s linear;
+}
+
+@keyframes l7 {
+  0%  {top: 650px; right: 230px; opacity: 0;}
+  100%  {top: 572px; right: 135px; opacity: 1;}
+}
+
+.L8 {
+  border: 17px solid #e17748;
+  height: 1000px;
+  width: 1000px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 605px;
+  right: 128px;
+  animation: l8 .1s linear;
+}
+
+@keyframes l8 {
+  0%  {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+.over  {
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  height: 570px;
+  width: 390px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.left {
+  width: 104px;
+  height: 55px;
+  position: absolute;
+  top: 175px;
+  left: 68px;
+  background-image: url("../images/lefteyeno.png");
+  z-index: 1;
+  animation: fade 6s ease-in;
+}
+
+.right  {
+  width: 103px;
+  height: 54px;
+  position: absolute;
+  top: 175px;
+  left: 211px;
+  background-image: url("../images/righteyeno.png");
+  z-index: 1;
+  animation: fade 7s ease-in;
+}
+
+@keyframes fade {
+  0%  {opacity: 0;}
+  100%  {opacity: 1;}
+
+}
+
+.major  {
+  width: 384px;
+  height: 25px;
+  background-color: #e17748;
+  font-size: 10px;
+  position: absolute;
+  text-align: center;
+  font-family: 'Bayon', sans-serif;
+  letter-spacing: 2px;
+  font-style:
+}
+
+.text {
+  position: relative;
+  bottom: 5px;
+}
+
+.eye  {
+  width: 38px;
+  height: 38px;
+  background: #11092b;
+  position: absolute;
+  top: 208px;
+  left:122px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 75% 0;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+  opacity: 0;
+  transition: .5s;
+  animation: lid 7.5s infinite;
+  animation-delay: 7s;
+  cursor: default;
+}
+
+.eye2  {
+  width: 38px;
+  height: 38px;
+  background: #11092b;
+  position: absolute;
+  top: 208px;
+  left:260px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 75% 0;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+  opacity: 0;
+  transition: .5s;
+  animation: lid 7.5s infinite;
+  animation-delay: 7s;
+  cursor: default;
+}
+
+@keyframes  lid {
+  0%  {opacity: 1;}
+  10% {opacity: 0;}
+  20%  {opacity: 0;}
+  30% {opacity: 0;}
+  40%  {opacity: 0;}
+  50% {opacity: 0;}
+  60%  {opacity: 1;}
+  70% {opacity: 0;}
+  80%  {opacity: 1;}
+  90% {opacity: 0;}
+  100%  {opacity: 0;}
+}
+
+.move {
+ animation: shift 5s infinite;
+}
+
+@keyframes shift  {
+  0%  {position: absolute; top: 60px; left:0px;}
+  50%  {position: absolute; top: 55px; left:1px;}
+  100%  {position: absolute; top: 60px; left:0px;}
+}
+
+.leftiris {
+  width: 30px;
+  height: 16px;
+  position: relative;
+  top: 27px;
+  left: 40px;
+  background-image: url("../images/leftiris.png");
+  animation: Lside 5s infinite;
+  animation-delay: 3s;
+}
+
+.rightiris {
+  width: 30px;
+  height: 18px;
+  position: relative;
+  top: 27px;
+  left: 35px;
+  background-image: url("../images/rightiris.png");
+  animation: Rside 5s infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes Lside {
+  0%  {top: 27px; left: 40px;}
+  30% {top: 27px; left: 36px;}
+  40% {top: 27px; left: 36px;}
+  50% {top: 27px; left: 40px;}
+  70% {top: 27px; left: 43px;}
+  100%  {top: 27px; left: 40px;}
+}
+
+@keyframes Rside {
+  0%  {top: 27px; left: 35px;}
+  30% {top: 27px; left: 31px;}
+  40% {top: 27px; left: 31px;}
+  50% {top: 27px; left: 35px;}
+  70% {top: 27px; left: 38px;}
+  100%  {top: 27px; left: 35px;}
+}
+
+
+.gone {
+  opacity: 1;
+  transition: 1s;
+}
+
+.gone:hover {
+  opacity: 0;
+  transition: .05s;
+
+}
+
+
+
+.title  {
+  z-index: 10;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  letter-spacing: 3px;
+  width: 384px;
+  position: absolute;
+  top: 40px;
+  left:2px;
+}
+
+.orange {
+  word-spacing: -6px;
+  color: #e17748;
+  font-size: 36px;
+  transition: 2s;
+}
+
+.orange:hover {
+  text-shadow: 1px 1px 5px white;
+  transition: 1s;
+  font-size: 40px;
+}
+
+
+.city {
+  background-image: url("../images/city.png");
+  width: 384px;
+  height: 224px;
+  position: absolute;
+  top: 375px;
+  animation: big 2s infinite;
+}
+
+@keyframes big  {
+  0%  {transform: scale(1);}
+  50% {transform: scale(1.025); left:.5px;}
+  100%  {transform: scale(1);}
+}
+
+
+.lips {
+  background-image: url("../images/lips.png");
+  width:75px;
+  height: 31px;
+  position: absolute;
+  top:375px;
+  left: 150px;
+  animation: shift1 8s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes shift1  {
+  0%  {position: absolute; top: 375px; left:150px;}
+  50%  {position: absolute; top: 360px; left:155px; transform: scale(1.1);}
+  100%  {position: absolute; top: 375px; left:150px;}
+}
+
+.fade {
+  animation: fade 2.5s ease-in;
+}
+/*
+.dropdown {
+  width: 9px;
+  height: 10px;
+  position: absolute;
+  top: 330px;
+  left: 110px;
+  background-color: red;
+}
+*/
+.tear {
+  background-image: url("../images/tear.png");
+  width: 9px;
+  height: 92px;
+  position: absolute;
+  top: 330px;
+  left: 110px;
+  z-index: 5;
+  transition: 2s;
+  animation: fade 2s ease-in;
+  cursor: pointer;
+}
+
+.tear:active {
+  animation: drop 6s forwards;
+  transition: 2s;
+}
+
+@keyframes drop {
+  0%  {opacity: 1; position: absolute; top: 330px; left: 110px;}
+  30%  {opacity: 1; position: absolute; top: 450px; left: 110px;}
+  90%  {opacity: 1; position: absolute; top: 5000px; left: 110px;}
+  100%  {opacity: 1; position: absolute; top: 330px; left: 110px; transition: 2s;}
+}
+
+
+
+/* vibes thasadith */
